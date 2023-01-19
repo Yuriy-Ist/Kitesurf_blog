@@ -1,0 +1,12 @@
+{% load static %}
+<section class="header">
+    <div class="header_content">
+        <h1 class="header_text">
+            {% if post.h1 %}
+                {{ post.h1 }}
+            {% else %}
+                {{ title }}
+            {% endif %}
+        </h1>
+    </div>
+</section>
